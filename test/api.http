@@ -1,33 +1,39 @@
 ### CREATE ROLE
-POST http://localhost:3000/position
+POST http://localhost:3000/employee
 Content-Type: application/json
 
+
 {
-  "title": "Developer",
-  "description": "Backend developer",
-  "level": 2
+"firstName": "Somchai",
+"lastName": "Jaidee",
+"position": "Programmer",
+"salary": 48000,
+"hireDate": "2024-06-01"
 }
 
 
 ### READ ALL ROLES
-GET http://localhost:3000/position
+GET http://localhost:3000/employee
 
 
 ### READ ROLE BY ID
-GET http://localhost:3000/position/1
+GET http://localhost:3000/employee/1
 
 
 
 ### UPDATE ROLE
-PUT http://localhost:3000/position/6
+PUT http://localhost:3000/employee/1
 Content-Type: application/json
 
+
 {
-  "title": "Dev",
-  "description": "Backend",
-  "level": 2
+"firstName": "Somchai",
+"lastName": "Jaidee",
+"position": "Senior Programmer",
+"salary": 55000,
+"hireDate": "2024-06-01"
 }
 
 
 ### DELETE ROLE
-DELETE http://localhost:3000/position/7
+DELETE http://localhost:3000/employee/1

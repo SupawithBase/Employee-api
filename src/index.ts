@@ -1,12 +1,12 @@
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
-import PositionRoute from './Position/index.js'
+import EmployeeRoute from './Employee/index.js'
 
 
 const app = new Hono()
 
 
-app.route('/position', PositionRoute)
+app.route('/employee', EmployeeRoute)
 
 serve(
   {

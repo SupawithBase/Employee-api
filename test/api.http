@@ -1,0 +1,33 @@
+### CREATE ROLE
+POST http://localhost:3000/position
+Content-Type: application/json
+
+{
+  "title": "Developer",
+  "description": "Backend developer",
+  "level": 2
+}
+
+
+### READ ALL ROLES
+GET http://localhost:3000/position
+
+
+### READ ROLE BY ID
+GET http://localhost:3000/position/1
+
+
+
+### UPDATE ROLE
+PUT http://localhost:3000/position/6
+Content-Type: application/json
+
+{
+  "title": "Dev",
+  "description": "Backend",
+  "level": 2
+}
+
+
+### DELETE ROLE
+DELETE http://localhost:3000/position/7
